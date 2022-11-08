@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="main/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-800">
+    <div class="flex flex-col-reverse bg-gray-600 mx-auto my-20 w-2/3 xl:w-4/5">
+      <div class="px-20 py-20">
+        <h1 class="text-5xl mt-6 text-white font-bold">Generate a</h1>
+        <h1 class="text-5xl mt-3 text-green-400 font-bold">
+          random password 🔐
+        </h1>
+        <p class="text-green-200 mt-4">Never use an insecure password again.</p>
+        <p class="text-white mt-4">Symbol and number feature</p>
+        <input type="radio" id="radioOn" name="fav_language" value="HTML" />
+        <label class="text-white">on</label><br />
+        <input type="radio" id="radioOff" name="fav_language" value="HTML" />
+        <label class="text-white">off</label><br />
+        <div>
+          <p class="text-white mt-4">Choose the length of your password</p>
+          <h1 id="passLength" class="text-white mb-2 text-xl ml-4"></h1>
+          <button
+            id="pass-high"
+            class="bg-gray-700 ml-3 hover:bg-gray-200 hover:text-black text-white px-1.5 text-lg py-1 rounded-full"
+          >
+            ⮙
+          </button>
+          <button
+            id="pass-low"
+            class="bg-gray-700 ml-3 hover:bg-gray-200 hover:text-black text-white px-1.5 text-lg py-1 rounded-full"
+          >
+            ⮛
+          </button>
+        </div>
+        <button
+          id="Pass-generate"
+          class="rounded-lg bg-green-400 hover:bg-green-700 mt-16 mb-8 text-white px-3 py-2 font-bold"
+        >
+          Generate passwords 🔑
+        </button>
+        <div class="flex flex-col xl:flex-row">
+          <button
+            id="first-pass"
+            class="rounded-lg bg-gray-700 text-green-500 hover:bg-gray-900 hover:text-orange-200 w-44 h-8 mr-20 px-3 py-2 font-bold"
+          ></button>
+          <button
+            id="second-pass"
+            class="rounded-lg bg-gray-700 mt-6 xl:mt-0 hover:bg-gray-900 hover:text-orange-200 text-green-500 w-44 h-8 px-3 py-2 font-bold"
+          ></button>
+        </div>
+        <button
+          id="history-btn"
+          class="px-2 mt-4 hover:bg-gray-800 py-1 bg-gray-700 text-white rounded-lg"
+        >
+          History 📋
+        </button>
+        <p
+          id="history-list"
+          class="text-lg bg-gray-800 mt-3 text-green-300 font-bold"
+        ></p>
+        <button
+          id="clear-btn"
+          class="px-2 mt-4 hover:bg-gray-800 py-1 bg-gray-700 text-white rounded-lg"
+        >
+          Clean 🗑
+        </button>
+      </div>
+      <div class="w-fit">
+        <img class="h-full" src="./pic/pass.jpg" alt="" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
